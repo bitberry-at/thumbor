@@ -1,6 +1,6 @@
 FROM python:3.11
 
-LABEL maintainer="MinimalCompact"
+LABEL maintainer="MinimalCompact & Bitberry"
 
 VOLUME /data
 
