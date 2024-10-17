@@ -28,7 +28,7 @@ jobs:
       - name: get thumbor version
         id: version
         run: |
-          echo "VERSION=$(cat thumbor/requirements.txt | grep thumbor== | cut -d= -f 3)" >> $GITHUB_OUTPUT
+          echo "VERSION=$(cat thumbor/requirements.txt | grep 'thumbor\[all\]==' | cut -d= -f 3)" >> $GITHUB_OUTPUT
 
       - name: Extract metadata
         id: meta
